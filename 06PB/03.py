@@ -8,13 +8,6 @@ while True :
         break
     n, m = m, n % m
 print("  >> gcd({}, {}) ={:>7}".format(x,y,n))
-n, m = x, y
-if m > n :
-    n, m = m, n
-lcm_first = m
-while True :
-    if lcm_first % n == 0 and lcm_first % m == 0 :
-        lcm = lcm_first
-        break
-    lcm_first += 1
-print("  >> lcm({}, {}) ={:>7}".format(x,y,lcm))
+new_x = x // n
+new_y = y // n
+print("  >> lcm({}, {}) ={:>7}".format(x,y,new_x*new_y*n))
