@@ -5,4 +5,4 @@ def alternatingSum(n) :
         return (n+1) // 2
 
 n = int(input("Enter n of series: "))
-print("Alternating Sum from 1 to {:d} is {:d}".format(n,alternatingSum(n))
+print("Alternating Sum from 1 to {:d} is {:d}".format(n,alternatingSum(n)))
