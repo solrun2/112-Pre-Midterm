@@ -4,4 +4,5 @@ def alternatingSum(n) :
     else :
         return (n+1) // 2
 
-print(alternatingSum(int(input("Enter n: "))))
+n = int(input("Enter n of series: "))
+print("Alternating Sum from 1 to {:d} is {:d}".format(n,alternatingSum(n))
