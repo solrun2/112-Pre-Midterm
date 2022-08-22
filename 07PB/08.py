@@ -18,6 +18,7 @@ while i > 1 :
         i -= 1
         continue
     if isSquare(int(n**2 - i)) :
+        print(int(math.sqrt(i)), int(math.sqrt(n**2 - i))) #check
         cnt += 1
     i -= 1
 print(cnt)
