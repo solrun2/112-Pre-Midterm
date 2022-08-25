@@ -2,13 +2,12 @@ n = int(input("Enter a number: "))
 if n < 1 or n > 26 :
     print("Invalid input, program terminates.")
 else :
-    i = 1
+    i = 0
     c = ord("A")
-    while i <= n :
-      j = 1
+    while i < n :
+      j = 0
       while j <= i :
-        print(chr(c+j-1),end="")
+        print(chr(c+j),end="")
         j += 1
       print("")
       i += 1
-      
