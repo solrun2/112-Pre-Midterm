@@ -9,4 +9,3 @@ while not(1<=sum<=9) :
         n = n // 10
     n = sum
 print(sum)
-    
