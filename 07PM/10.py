@@ -1,9 +1,12 @@
-cnt = 1
-s = input()
-for i in s :
-    if int(i) % 2 == 0 :
-        cnt *= int(i)
-if cnt == 1 :
-    print(-1)
-else :
-    print(cnt)
+n = int(input())
+ans = 0
+while True :
+    if n == 0 :
+        break
+    d = n % 10
+    if d % 2 == 1 :
+        ans += d
+    n = n // 10
+if ans == 0 :
+    ans = -1
+print(ans)
